@@ -194,6 +194,9 @@ footer a {
   padding: 10px;
   width: 100%;
 }
+.form__error {
+  color: red;
+}
 
 .carousel {
   margin: 0 auto;
@@ -321,4 +324,18 @@ input#img-3:checked ~ .carousel__dots label#img-dot-3 {
 
 input:checked + .carousel__slide-container .nav label {
   display: block;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid #2563eb;
+  border-radius: 50%;
+  z-index: 9999;
+  animation: rotation 1s linear infinite;
 }
